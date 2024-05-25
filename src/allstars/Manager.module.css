@@ -63,6 +63,10 @@ a {
   line-height: 60px;
 }
 
+.route {
+  color: white;
+}
+
 .mainManager {
   padding-top: 116px;
   width: auto;
@@ -102,7 +106,7 @@ a {
   background-color: gray;
   background-image: url("../../public/img/logo.png");
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 40%;
   background-position: center;
   position: relative;
   overflow: hidden;
@@ -119,6 +123,33 @@ a {
   z-index: -1;
   inset: 0;
   opacity: 0.9;
+}
+
+.inner2 {
+  margin: 0 auto;
+  height: 500px;
+  width: 100%;
+  max-width: 1200px;
+  background-color: lightgray;
+  background-image: url("../../public/img/logo.png");
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.inner2::after {
+  content: "";
+  position: absolute;
+  background: white;
+  z-index: -1;
+  inset: 0;
+  opacity: 0.01;
 }
 
 .kim {
@@ -154,4 +185,8 @@ a {
 .fifth {
   font-size: 20px;
   color: rgb(66, 66, 66);
+}
+
+.grade {
+  opacity: 0.9;
 }

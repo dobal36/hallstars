@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Manager.module.css";
 
-function Manager() {
+function Grade() {
   return (
     <div>
       <header className={styles.hair}>
@@ -53,34 +53,23 @@ function Manager() {
                 <Link to="/allstars">팀소개</Link>
               </li>
               <li>
-                <Link to="/manager" style={{ color: "black" }}>
-                  감독
-                </Link>
+                <Link to="/manager">감독</Link>
               </li>
               <li>
-                <Link to="/grade">팀성적</Link>
+                <Link to="/grade" style={{ color: "black" }}>
+                  팀성적
+                </Link>
               </li>
             </ul>
           </section>
           <section>
-            <div className={styles.inner}>
+            <div className={styles.inner2}>
               <div>
-                <img src="/img/manager.png" alt="kim" className={styles.kim} />
-              </div>
-              <div className={styles.file}>
-                <p className={styles.first}>32</p>
-                <p className={styles.second}>
-                  김의진 <span className={styles.third}>감독</span>
-                </p>
-                <p className={styles.fourth}>&nbsp;KIM EUI JIN</p>
-                <br />
-
-                <p className={styles.fifth}>&nbsp;생년월일 | 1998-06-25</p>
-                <p className={styles.fifth}>&nbsp;투타 | 우투우타</p>
-                <p className={styles.fifth}>&nbsp;신장/체중 | 173cm 70kg</p>
-                <p className={styles.fifth}>
-                  &nbsp;경력 | 춘천리틀-춘천주니어-봉의고
-                </p>
+                <img
+                  src="/img/grade.png"
+                  width={"590px"}
+                  className={styles.grade}
+                />
               </div>
             </div>
           </section>
@@ -90,4 +79,4 @@ function Manager() {
   );
 }
 
-export default Manager;
+export default Grade;

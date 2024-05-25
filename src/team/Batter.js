@@ -1,8 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Player.module.css";
 
+const links = [
+  { id: 1, path: "/allstars", label: "ALLSTARS", style: {} },
+  { id: 2, path: "/player", label: "TEAM", style: { color: "aqua" } },
+  {
+    id: 3,
+    path: "https://youtube.com/@user-cq3sp3xf8g?si=pyGekwioZGJDndjA",
+    label: "MOVIE",
+    style: {},
+  },
+  { id: 4, path: "/photo", label: "PHOTO", style: {} },
+];
+
+const links2 = [
+  { id: 1, path: "/player", label: "코칭스태프", style: {} },
+  { id: 2, path: "/pitcher", label: "투수", style: {} },
+  { id: 3, path: "/batter", label: "타자", style: { color: "black" } },
+  { id: 4, path: "/bench", label: "대기선수", style: {} },
+];
+
 function Batter() {
+  const [activeLinks, setActiveLinks] = useState(
+    Array(links.length).fill(false)
+  );
+
+  const handleMouseDown = (index) => {
+    const newActiveLinks = [...activeLinks];
+    newActiveLinks[index] = true;
+    setActiveLinks(newActiveLinks);
+  };
+
+  const handleMouseUp = (index) => {
+    const newActiveLinks = [...activeLinks];
+    newActiveLinks[index] = false;
+    setActiveLinks(newActiveLinks);
+  };
+
   return (
     <div>
       <header className={styles.hair}>
@@ -14,20 +49,21 @@ function Batter() {
         <div className={styles.headerBottom}>
           <nav>
             <ul className={styles.navigation}>
-              <li className={styles.menu}>
-                <Link to="/allstars">ALLSTARS</Link>
-              </li>
-              <li className={styles.menu} style={{ color: "aqua" }}>
-                <Link to="/player">TEAM</Link>
-              </li>
-              <li className={styles.menu}>
-                <Link to="https://youtube.com/@user-cq3sp3xf8g?si=pyGekwioZGJDndjA">
-                  MOVIE
-                </Link>
-              </li>
-              <li className={styles.menu}>
-                <Link to="/photo">PHOTO</Link>
-              </li>
+              {links.map((link, index) => (
+                <li key={link.id} className={styles.menu}>
+                  <Link
+                    to={link.path}
+                    className={`${styles.route} ${
+                      activeLinks[index] ? styles.routeActive : ""
+                    }`}
+                    onMouseDown={() => handleMouseDown(index)}
+                    onMouseUp={() => handleMouseUp(index)}
+                    style={link.style}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </nav>
         </div>
@@ -36,20 +72,13 @@ function Batter() {
         <article>
           <section>
             <ul className={styles.tab}>
-              <li>
-                <Link to="/player">코칭스태프</Link>
-              </li>
-              <li>
-                <Link to="/pitcher">투수</Link>
-              </li>
-              <li>
-                <Link to="/batter" style={{ color: "black" }}>
-                  타자
-                </Link>
-              </li>
-              <li>
-                <Link to="/bench">대기선수</Link>
-              </li>
+              {links2.map((link) => (
+                <li key={link.id}>
+                  <Link to={link.path} style={link.style}>
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </section>
           <section>

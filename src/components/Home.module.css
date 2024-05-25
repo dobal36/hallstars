@@ -134,7 +134,7 @@ a {
   display: none;
 }
 
-@media screen and (max-width: 944px) {
+/* @media screen and (max-width: 944px) {
   .headerhome {
     display: flex;
     flex-flow: row wrap;
@@ -296,4 +296,4 @@ a {
     z-index: 0;
     transform: translate(0%, 0%);
   }
-}
+} */

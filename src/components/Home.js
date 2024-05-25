@@ -75,7 +75,7 @@ function Home() {
           </Link>
         </div>
         <div className={classNames(styles.menu, styles.item4)}>
-          <Link to="">
+          <Link to="/photo">
             <img src="/img/photo.jpg" width="100%" height="100%" alt="pho" />
             <div className={styles.text}>
               <p className={classNames(styles.ment1, styles.ment2)}>PHOTO</p>
