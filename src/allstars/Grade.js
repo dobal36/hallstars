@@ -69,6 +69,7 @@ function Grade() {
                   src="/img/grade.png"
                   width={"590px"}
                   className={styles.grade}
+                  alt="gra"
                 />
               </div>
             </div>
