@@ -50,7 +50,7 @@ function Manager() {
           <section>
             <ul className={styles.tab}>
               <li>
-                <Link to="/allstars">팀소개</Link>
+                <Link to="/allstars">팀연혁</Link>
               </li>
               <li>
                 <Link to="/manager" style={{ color: "black" }}>

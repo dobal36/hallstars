@@ -51,7 +51,7 @@ function Allstars() {
             <ul className={styles.tab}>
               <li>
                 <Link to="/allstars" style={{ color: "black" }}>
-                  팀소개
+                  팀연혁
                 </Link>
               </li>
               <li>
@@ -64,10 +64,38 @@ function Allstars() {
           </section>
           <section>
             <div className={styles.inner}>
-              <div>
-                <p className={styles.fuckyou} style={{ fontSize: "128px" }}>
-                  최현서 잘생겼다
+              <div className={styles.history}>
+                <p>2019.08.01&nbsp;&nbsp; | &nbsp;&nbsp;팀 창단</p>
+                <p>
+                  2019.08.08&nbsp;&nbsp; | &nbsp;&nbsp;제 3회 횡성군수기
+                  전국대학클럽 야구대회 준우승
                 </p>
+                <p>
+                  2021.07.30&nbsp;&nbsp; | &nbsp;&nbsp;제 2회 양구로부터
+                  전국대학클럽 야구대회 4위
+                </p>
+                <p>
+                  2022.02.18&nbsp;&nbsp; | &nbsp;&nbsp;2022 KUBA
+                  대학클럽야구대회 IN 강원 우승
+                </p>
+                <p>
+                  2022.07.25&nbsp;&nbsp; | &nbsp;&nbsp;KUSF 클럽챔피언십
+                  중부지역 8위
+                </p>
+                <p>
+                  2023.08.25&nbsp;&nbsp; | &nbsp;&nbsp;제 4회 청춘양구배
+                  전국대학클럽 야구대회 4위
+                </p>
+                <p>
+                  2023.10.29&nbsp;&nbsp; | &nbsp;&nbsp;제 1회 제천시 의림지배
+                  전국대학클럽 야구대회 4위
+                </p>
+
+                <p>
+                  2023.02.25&nbsp;&nbsp; | &nbsp;&nbsp;2024 제2회 야구&티볼
+                  페스티벌 IN 양구 OB 3위
+                </p>
+                <p>2024.03.02&nbsp;&nbsp; | &nbsp;&nbsp;춘천 호반리그 참가</p>
               </div>
             </div>
           </section>
