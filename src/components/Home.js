@@ -39,7 +39,7 @@ function Home() {
         </nav>
         <div className={classNames(styles.menu, styles.item1)}>
           <Link to="/manager">
-            <video
+            {/* <video
               src="/media/manager.mp4"
               width="100%"
               height="100%"
@@ -47,7 +47,13 @@ function Home() {
               muted
               loop
               controls
-            ></video>
+            ></video> */}
+            <img
+              src="../img/manager.jpg"
+              width="100%"
+              height="100%"
+              alt="manager"
+            />
             <div className={styles.text}>
               <p className={styles.ment1}>MANAGER</p>
             </div>
