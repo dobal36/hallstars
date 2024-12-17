@@ -42,7 +42,7 @@ function Pitcher() {
 
   const handleYearChange = (e) => {
     const selectedYear = e.target.value;
-    navigate(`/player${selectedYear}`);
+    navigate(`/pitcher${selectedYear}`);
   };
 
   return (

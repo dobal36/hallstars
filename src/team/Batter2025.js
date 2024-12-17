@@ -42,7 +42,7 @@ function Batter() {
 
   const handleYearChange = (e) => {
     const selectedYear = e.target.value;
-    navigate(`/player${selectedYear}`);
+    navigate(`/batter${selectedYear}`);
   };
 
   return (
