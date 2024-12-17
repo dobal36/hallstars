@@ -39,7 +39,7 @@ function Home() {
         </nav>
         <div className={classNames(styles.menu, styles.item1)}>
           <Link to="/manager">
-            <video
+            {/* <video
               src="/media/manager.mp4"
               width="100%"
               height="100%"
@@ -47,14 +47,20 @@ function Home() {
               muted
               loop
               controls
-            ></video>
+            ></video> */}
+            <img
+              src="../img/manager.jpg"
+              width="100%"
+              height="100%"
+              alt="manager"
+            />
             <div className={styles.text}>
               <p className={styles.ment1}>MANAGER</p>
             </div>
           </Link>
         </div>
         <div className={classNames(styles.menu, styles.item2)}>
-          <Link to="/player">
+          <Link to="/player2025">
             <img
               src="../img/player.jpg"
               width="100%"
@@ -67,7 +73,7 @@ function Home() {
           </Link>
         </div>
         <div className={classNames(styles.menu, styles.item3)}>
-          <Link to="https://youtube.com/@user-cq3sp3xf8g?si=pyGekwioZGJDndjA">
+          <Link to="https://www.youtube.com/channel/UC6FZdLtK9wj-JethaIa9Qtw">
             <img src="/img/movie.jpg" width="100%" height="100%" alt="movie" />
             <div className={styles.text}>
               <p className={classNames(styles.ment1, styles.ment3)}>MOVIE</p>
@@ -75,10 +81,10 @@ function Home() {
           </Link>
         </div>
         <div className={classNames(styles.menu, styles.item4)}>
-          <Link to="">
-            <img src="/img/photo.jpg" width="100%" height="100%" alt="pho" />
+          <Link to="/award">
+            <img src="/img/award.jpg" width="100%" height="100%" alt="awa" />
             <div className={styles.text}>
-              <p className={classNames(styles.ment1, styles.ment2)}>PHOTO</p>
+              <p className={classNames(styles.ment1, styles.ment2)}>AWARD</p>
             </div>
           </Link>
         </div>

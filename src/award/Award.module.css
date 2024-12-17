@@ -1,0 +1,187 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hair {
+  width: auto;
+  min-width: 1200px;
+  height: 106px;
+  background-color: rgb(19, 19, 184);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.headerTop {
+  height: 46px;
+  border-bottom: 1px solid lightgray;
+  text-align: center;
+}
+
+.logo {
+  width: 90px;
+  margin-top: 10px;
+}
+
+.headerBottom {
+  height: 70px;
+  border-bottom: 10px solid rgb(0, 177, 138);
+}
+
+.headerBottom nav {
+  height: 60px;
+}
+
+.navigation {
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu {
+  width: 141.6px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 60px;
+}
+
+.route {
+  color: white;
+}
+
+.routeActive {
+  color: red;
+}
+
+.mainManager {
+  padding-top: 116px;
+  width: auto;
+  min-width: 1200px;
+  height: 1000px;
+  background-color: #ffffff;
+}
+
+.tab a {
+  color: lightgray;
+}
+
+.tab {
+  padding-top: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding-bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 1px solid gray;
+  margin-bottom: 50px;
+}
+
+.tab li {
+  width: 140px;
+  text-align: center;
+}
+
+.inner {
+  margin: 0 auto;
+  height: 1000px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.year {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.mold {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.playerList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 50px;
+  justify-items: center;
+}
+
+.player {
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
+.titleholder {
+  font-size: 58px;
+  font-weight: bold;
+  height: 245px;
+  line-height: 200px;
+}
+
+.profileBox {
+  border-radius: 30px;
+  background-image: url("/public/img/title.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.profile {
+  width: 260px;
+  border-radius: 10px;
+}
+
+.profileName {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.record {
+  font-size: 52px;
+  font-weight: bold;
+}
+
+.name span {
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.eName {
+  font-size: 18px;
+  float: left;
+}
+
+.recordName {
+  font-size: 32px;
+  font-weight: bold;
+}

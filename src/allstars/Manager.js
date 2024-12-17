@@ -15,18 +15,31 @@ function Manager() {
           <nav>
             <ul className={styles.navigation}>
               <li className={styles.menu}>
-                <Link to="/allstars">ALLSTARS</Link>
-              </li>
-              <li className={styles.menu} style={{ color: "aqua" }}>
-                <Link to="/manager">TEAM</Link>
+                <Link
+                  to="/allstars"
+                  className={styles.route}
+                  style={{ color: "aqua" }}
+                >
+                  ALLSTARS
+                </Link>
               </li>
               <li className={styles.menu}>
-                <Link to="https://youtube.com/@user-cq3sp3xf8g?si=pyGekwioZGJDndjA">
+                <Link to="/player2025" className={styles.route}>
+                  TEAM
+                </Link>
+              </li>
+              <li className={styles.menu}>
+                <Link
+                  to="https://www.youtube.com/channel/UC6FZdLtK9wj-JethaIa9Qtw"
+                  className={styles.route}
+                >
                   MOVIE
                 </Link>
               </li>
               <li className={styles.menu}>
-                <Link to="/photo">PHOTO</Link>
+                <Link to="/award" className={styles.route}>
+                  AWARD
+                </Link>
               </li>
             </ul>
           </nav>
@@ -37,15 +50,15 @@ function Manager() {
           <section>
             <ul className={styles.tab}>
               <li>
+                <Link to="/allstars">팀연혁</Link>
+              </li>
+              <li>
                 <Link to="/manager" style={{ color: "black" }}>
                   감독
                 </Link>
               </li>
               <li>
-                <Link to="/pitcher">팀소개</Link>
-              </li>
-              <li>
-                <Link to="/batter">팀성적</Link>
+                <Link to="/grade">리그성적</Link>
               </li>
             </ul>
           </section>
