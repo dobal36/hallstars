@@ -43,11 +43,11 @@ function Player() {
     setActiveLinks(newActiveLinks);
   };
 
-  const navigate = useNavigate(); // React Router의 useNavigate 훅 사용
+  const navigate = useNavigate();
 
   const handleYearChange = (e) => {
     const selectedYear = e.target.value;
-    navigate(`/player${selectedYear}`); // 해당 연도로 이동
+    navigate(`/player${selectedYear}`);
   };
 
   return (

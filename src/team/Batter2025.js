@@ -38,6 +38,13 @@ function Batter() {
     setActiveLinks(newActiveLinks);
   };
 
+  const navigate = useNavigate();
+
+  const handleYearChange = (e) => {
+    const selectedYear = e.target.value;
+    navigate(`/player${selectedYear}`);
+  };
+
   return (
     <div>
       <header className={styles.hair}>
@@ -83,12 +90,7 @@ function Batter() {
           </section>
           <section>
             <div className={styles.year}>
-              <select
-                onChange={(e) => {
-                  const selectedYear = e.target.value;
-                  window.location.href = `/batter${selectedYear}`; // 페이지를 해당 연도로 이동
-                }}
-              >
+              <select onChange={handleYearChange}>
                 <option value="2025">2025시즌</option>
                 <option value="2024">2024시즌</option>
               </select>
