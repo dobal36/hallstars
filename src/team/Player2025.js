@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useNavigate } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Player.module.css";
 
@@ -25,6 +25,13 @@ const links2 = [
   { id: 3, path: "/batter2025", label: "타자", style: {} },
   { id: 4, path: "/bench", label: "등번호", style: {} },
 ];
+
+const navigate = useNavigate(); // React Router의 useNavigate 훅 사용
+
+const handleYearChange = (e) => {
+  const selectedYear = e.target.value;
+  navigate(`/player${selectedYear}`); // 해당 연도로 이동
+};
 
 function Player() {
   const [activeLinks, setActiveLinks] = useState(
@@ -88,14 +95,9 @@ function Player() {
           </section>
           <section>
             <div className={styles.year}>
-              <select
-                onChange={(e) => {
-                  const selectedYear = e.target.value;
-                  window.location.href = `/player${selectedYear}`; // 페이지를 해당 연도로 이동
-                }}
-              >
-                <option value="2025">2025시즌</option>
+              <select onChange={handleYearChange}>
                 <option value="2024">2024시즌</option>
+                <option value="2025">2025시즌</option>
               </select>
             </div>
             <div className={styles.inner}>
