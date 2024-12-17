@@ -26,11 +26,6 @@ const links2 = [
   { id: 4, path: "/bench", label: "등번호", style: {} },
 ];
 
-const handleYearChange = (e) => {
-  const selectedYear = e.target.value;
-  navigate(`/player${selectedYear}`); // 해당 연도로 이동
-};
-
 function Player() {
   const [activeLinks, setActiveLinks] = useState(
     Array(links.length).fill(false)
@@ -49,6 +44,11 @@ function Player() {
   };
 
   const navigate = useNavigate(); // React Router의 useNavigate 훅 사용
+
+  const handleYearChange = (e) => {
+    const selectedYear = e.target.value;
+    navigate(`/player${selectedYear}`); // 해당 연도로 이동
+  };
 
   return (
     <div>
