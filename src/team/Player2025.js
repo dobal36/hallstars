@@ -96,8 +96,8 @@ function Player() {
           <section>
             <div className={styles.year}>
               <select onChange={handleYearChange}>
-                <option value="2024">2024시즌</option>
                 <option value="2025">2025시즌</option>
+                <option value="2024">2024시즌</option>
               </select>
             </div>
             <div className={styles.inner}>
