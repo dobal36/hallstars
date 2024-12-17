@@ -1,0 +1,299 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mainhome {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  position: relative;
+  border: 0px solid gray;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.item1,
+.item2,
+.item3,
+.item4 {
+  overflow: hidden;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.item1 {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+
+.item2 {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+}
+
+.item3 {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+.item4 {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+.logo {
+  width: 20%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.text {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ment1 {
+  text-align: center;
+  font-size: 9vw;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.ment2 {
+  font-size: 11vw;
+}
+
+.ment3 {
+  font-size: 13vw;
+}
+
+.item1:hover {
+  opacity: 1;
+  width: 120%;
+  height: 120%;
+  z-index: 3;
+}
+
+.item2:hover {
+  opacity: 1;
+  width: 120%;
+  height: 120%;
+  z-index: 3;
+  transform: translateX(-16.7%);
+}
+
+.item3:hover {
+  opacity: 1;
+  width: 120%;
+  height: 120%;
+  z-index: 3;
+  transform: translateY(-16.7%);
+}
+
+.item4:hover {
+  opacity: 1;
+  width: 120%;
+  height: 120%;
+  z-index: 3;
+  transform: translate(-16.7%, -16.7%);
+}
+
+.headerhome {
+  display: none;
+}
+
+.navigation {
+  display: none;
+}
+
+/* @media screen and (max-width: 944px) {
+  .headerhome {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .logo2 {
+    width: 50px;
+    margin: 10px 30px;
+  }
+
+  .btn {
+    margin: auto 10px;
+    width: 50px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: black;
+    opacity: 0.7;
+    border: none;
+    color: white;
+  }
+
+  .btn:hover {
+    opacity: 1;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .navigation {
+    width: 100%;
+    height: 100%;
+  }
+
+  .navigationList {
+    width: 100%;
+    height: 100%;
+  }
+
+  .navigationMenu:nth-child(1) {
+    margin-top: 0;
+  }
+
+  .navigationMenu {
+    margin: 10px 40px;
+    padding: 20px;
+    height: 58px;
+    border-radius: 30px;
+  }
+
+  .navigationMenu:hover {
+    background-color: lightgray;
+    cursor: pointer;
+  }
+
+  .navigationBtn {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    line-height: 18px;
+  }
+
+  .navigationBtn span {
+    float: left;
+  }
+
+  .navigationBtn img {
+    float: right;
+    height: 12px;
+    margin: auto 0;
+  }
+  .mainhome {
+    display: block;
+  }
+
+  .menu {
+    position: relative;
+    border: 0px solid gray;
+    width: 100%;
+    height: 40%;
+    background-color: black;
+  }
+
+  .item2,
+  .item3,
+  .item4 {
+    border-bottom: 30px solid black;
+  }
+
+  .item1,
+  .item2,
+  .item3,
+  .item4 {
+    overflow: hidden;
+    opacity: 1;
+    z-index: 0;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .ment1 {
+    text-align: center;
+    font-size: 9vw;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  .ment2 {
+    font-size: 11vw;
+  }
+
+  .ment3 {
+    font-size: 13vw;
+  }
+
+  .item1:hover {
+    opacity: 1;
+    width: 100%;
+    height: 40%;
+    z-index: 0;
+  }
+
+  .item2:hover {
+    opacity: 1;
+    width: 100%;
+    height: 40%;
+    z-index: 0;
+    transform: translateX(0%);
+  }
+
+  .item3:hover {
+    opacity: 1;
+    width: 100%;
+    height: 40%;
+    z-index: 0;
+    transform: translateY(0%);
+  }
+
+  .item4:hover {
+    opacity: 1;
+    width: 100%;
+    height: 40%;
+    z-index: 0;
+    transform: translate(0%, 0%);
+  }
+} */
